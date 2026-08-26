@@ -271,6 +271,12 @@
             color: var(--text-muted);
         }
 
+        /* Jira Target start/end range for epics not yet Done. */
+        .target-dates {
+            font-size: 0.6875rem;
+            color: var(--text-muted);
+        }
+
         /* Shown when the milestone's Jira Target end has passed while still In Progress. */
         .past-target {
             display: inline-block;
@@ -500,7 +506,7 @@
                     <strong>Status:</strong> <span class="status-badge status-in-progress">In Progress</span>
                 </div>
                 <div class="meta-item">
-                    <strong>Generated:</strong> August 17, 2026
+                    <strong>Generated:</strong> August 26, 2026
                 </div>
             </div>
         </header>
@@ -514,25 +520,25 @@
 
             <div class="stat-card">
                 <div class="stat-label">Epics Complete</div>
-                <div class="stat-value">4</div>
-                <div class="stat-detail">13.3% of total epics</div>
+                <div class="stat-value">5</div>
+                <div class="stat-detail">16.7% of total epics</div>
                 <div class="progress-bar">
-                    <div class="progress-fill" style="width: 13.3%"></div>
+                    <div class="progress-fill" style="width: 16.7%"></div>
                 </div>
             </div>
 
             <div class="stat-card">
                 <div class="stat-label">In Dev</div>
-                <div class="stat-value">22</div>
-                <div class="stat-detail">73.3% actively in development</div>
+                <div class="stat-value">23</div>
+                <div class="stat-detail">76.7% actively in development</div>
             </div>
 
             <div class="stat-card">
                 <div class="stat-label">Stories Complete</div>
-                <div class="stat-value">299/477</div>
-                <div class="stat-detail">62.7% of active stories (24 more closed as Will Not Do)</div>
+                <div class="stat-value">354/520</div>
+                <div class="stat-detail">68.1% of active stories (24 more closed as Will Not Do)</div>
                 <div class="progress-bar">
-                    <div class="progress-fill" style="width: 62.7%"></div>
+                    <div class="progress-fill" style="width: 68.1%"></div>
                 </div>
             </div>
         </div>
@@ -544,30 +550,9 @@
                 <div class="status-column">
                     <div class="status-column-header ready-groom">
                         <div class="status-column-title">Backlog / Refinement</div>
-                        <div class="status-column-count">4</div>
+                        <div class="status-column-count">2</div>
                     </div>
                     <div class="status-column-body">
-                        <div class="epic-card">
-            <div class="epic-header">
-                <div class="epic-title">RAS: Upgrades Backend Work including Flat Fee</div>
-                <a href="https://jira.livenation.com/browse/PAS-1" target="_blank" class="epic-key">PAS-1</a>
-            </div>
-            <div class="epic-meta">
-                <span class="status-badge status-backlog">Backlog</span>
-                <div class="assignee">
-                    <div class="assignee-avatar">MS</div>
-                    <span>Mo Shareef</span>
-                </div>
-                <div class="story-completion low-completion">
-                    <span class="story-completion-text">0/6</span>
-                    <span class="story-completion-percent">0%</span>
-                    <div class="mini-progress-bar">
-                        <div class="mini-progress-fill low" style="width: 0%"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
                         <div class="epic-card">
             <div class="epic-header">
                 <div class="epic-title">Global EDP: Upgrades Phase 1.2 - Flat Fee UX Display</div>
@@ -575,36 +560,16 @@
             </div>
             <div class="epic-meta">
                 <span class="status-badge status-todo">In Refinement</span>
+                <span class="target-dates">Aug 24 – Oct 30, 2026</span>
                 <div class="assignee">
                     <div class="assignee-avatar">SV</div>
                     <span>Sean Vergara</span>
                 </div>
                 <div class="story-completion low-completion">
-                    <span class="story-completion-text">0/6</span>
-                    <span class="story-completion-percent">0%</span>
+                    <span class="story-completion-text">1/10</span>
+                    <span class="story-completion-percent">10%</span>
                     <div class="mini-progress-bar">
-                        <div class="mini-progress-fill low" style="width: 0%"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-                        <div class="epic-card">
-            <div class="epic-header">
-                <div class="epic-title">RAS: Integrate Codeless Unlockable Offers into RAS for use with EDP INTL (MFX)</div>
-                <a href="https://jira.livenation.com/browse/PAS-541" target="_blank" class="epic-key">PAS-541</a>
-            </div>
-            <div class="epic-meta">
-                <span class="status-badge status-todo">Ready for Refinement</span>
-                <div class="assignee">
-                    <div class="assignee-avatar">MS</div>
-                    <span>Mo Shareef</span>
-                </div>
-                <div class="story-completion low-completion">
-                    <span class="story-completion-text">1/7</span>
-                    <span class="story-completion-percent">14%</span>
-                    <div class="mini-progress-bar">
-                        <div class="mini-progress-fill low" style="width: 14%"></div>
+                        <div class="mini-progress-fill low" style="width: 10%"></div>
                     </div>
                 </div>
             </div>
@@ -617,12 +582,17 @@
             </div>
             <div class="epic-meta">
                 <span class="status-badge status-todo">In Refinement</span>
+                <span class="target-dates">Jul 20 – Sep 14, 2026</span>
                 <div class="assignee">
                     <div class="assignee-avatar">HC</div>
                     <span>Hans Chen</span>
                 </div>
-                <div class="story-completion">
-                    <span class="story-completion-text">No stories</span>
+                <div class="story-completion low-completion">
+                    <span class="story-completion-text">0/2</span>
+                    <span class="story-completion-percent">0%</span>
+                    <div class="mini-progress-bar">
+                        <div class="mini-progress-fill low" style="width: 0%"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -631,19 +601,64 @@
                 <div class="status-column">
                     <div class="status-column-header in-progress">
                         <div class="status-column-title">In Dev</div>
-                        <div class="status-column-count">22</div>
+                        <div class="status-column-count">23</div>
                     </div>
                     <div class="status-column-body">
                         <div class="epic-card">
             <div class="epic-header">
-                <div class="epic-title">Global EDP: Sports Calendar</div>
-                <a href="https://jira.livenation.com/browse/GEDP-8155" target="_blank" class="epic-key">GEDP-8155</a>
+                <div class="epic-title">Global EDP: Ticket Packages Phase 2 - ADA, Forced Packages, Password</div>
+                <a href="https://jira.livenation.com/browse/GEDP-7881" target="_blank" class="epic-key">GEDP-7881</a>
             </div>
             <div class="epic-meta">
                 <span class="status-badge status-in-progress">In Progress</span>
+                <span class="target-dates">Jul 17 – Sep 16, 2026</span>
                 <div class="assignee">
-                    <div class="assignee-avatar">SB</div>
-                    <span>Shani Brown</span>
+                    <div class="assignee-avatar">HC</div>
+                    <span>Hans Chen</span>
+                </div>
+                <div class="story-completion high-completion">
+                    <span class="story-completion-text">24/26</span>
+                    <span class="story-completion-percent">92%</span>
+                    <div class="mini-progress-bar">
+                        <div class="mini-progress-fill high" style="width: 92%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                        <div class="epic-card">
+            <div class="epic-header">
+                <div class="epic-title">Global EDP: Client Co-Branding Using Co-Branding Tool</div>
+                <a href="https://jira.livenation.com/browse/GEDP-5282" target="_blank" class="epic-key">GEDP-5282</a>
+            </div>
+            <div class="epic-meta">
+                <span class="status-badge status-in-progress">In QA</span>
+                <span class="target-dates">Apr 13 – Sep 30, 2026</span>
+                <div class="assignee">
+                    <div class="assignee-avatar">RR</div>
+                    <span>Rosie Rankin</span>
+                </div>
+                <div class="story-completion high-completion">
+                    <span class="story-completion-text">18/20</span>
+                    <span class="story-completion-percent">90%</span>
+                    <div class="mini-progress-bar">
+                        <div class="mini-progress-fill high" style="width: 90%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                        <div class="epic-card">
+            <div class="epic-header">
+                <div class="epic-title">Global EDP: Club Site</div>
+                <a href="https://jira.livenation.com/browse/GEDP-5305" target="_blank" class="epic-key">GEDP-5305</a>
+            </div>
+            <div class="epic-meta">
+                <span class="status-badge status-in-progress">In Progress</span>
+                <span class="target-dates">Jul 27 – Sep 30, 2026</span>
+                <div class="assignee">
+                    <div class="assignee-avatar">KK</div>
+                    <span>Kate Kasperski</span>
                 </div>
                 <div class="story-completion high-completion">
                     <span class="story-completion-text">14/16</span>
@@ -657,20 +672,135 @@
 
                         <div class="epic-card">
             <div class="epic-header">
-                <div class="epic-title">Global EDP: Club Site</div>
-                <a href="https://jira.livenation.com/browse/GEDP-5305" target="_blank" class="epic-key">GEDP-5305</a>
+                <div class="epic-title">Ticket Perks - Milestone Beta</div>
+                <a href="https://jira.livenation.com/browse/GEDP-7536" target="_blank" class="epic-key">GEDP-7536</a>
             </div>
             <div class="epic-meta">
                 <span class="status-badge status-in-progress">In Progress</span>
+                <span class="target-dates">Jun 24 – Sep 11, 2026</span>
                 <div class="assignee">
-                    <div class="assignee-avatar">KK</div>
-                    <span>Kate Kasperski</span>
+                    <div class="assignee-avatar">AT</div>
+                    <span>Ashley Trone</span>
                 </div>
                 <div class="story-completion high-completion">
-                    <span class="story-completion-text">13/15</span>
-                    <span class="story-completion-percent">87%</span>
+                    <span class="story-completion-text">30/35</span>
+                    <span class="story-completion-percent">86%</span>
                     <div class="mini-progress-bar">
-                        <div class="mini-progress-fill high" style="width: 87%"></div>
+                        <div class="mini-progress-fill high" style="width: 86%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                        <div class="epic-card">
+            <div class="epic-header">
+                <div class="epic-title">Global EDP: Milestone 6 Backend Support</div>
+                <a href="https://jira.livenation.com/browse/PAS-18" target="_blank" class="epic-key">PAS-18</a>
+            </div>
+            <div class="epic-meta">
+                <span class="status-badge status-in-progress">In Progress</span>
+                <span class="target-dates">Jul 1 – Aug 31, 2026</span>
+                <div class="assignee">
+                    <div class="assignee-avatar">MS</div>
+                    <span>Mo Shareef</span>
+                </div>
+                <div class="story-completion high-completion">
+                    <span class="story-completion-text">6/7</span>
+                    <span class="story-completion-percent">86%</span>
+                    <div class="mini-progress-bar">
+                        <div class="mini-progress-fill high" style="width: 86%"></div>
+                    </div>
+                </div>
+                <span class="assignee" title="Stories cancelled as Will Not Do; excluded from the completion denominator">+1 not doing</span>
+            </div>
+        </div>
+
+                        <div class="epic-card">
+            <div class="epic-header">
+                <div class="epic-title">Backend Ticket Perks - Milestone Beta</div>
+                <a href="https://jira.livenation.com/browse/PAS-7" target="_blank" class="epic-key">PAS-7</a>
+            </div>
+            <div class="epic-meta">
+                <span class="status-badge status-in-progress">In Progress</span>
+                <span class="target-dates">May 21 – Aug 31, 2026</span>
+                <div class="assignee">
+                    <div class="assignee-avatar">MS</div>
+                    <span>Mo Shareef</span>
+                </div>
+                <div class="story-completion high-completion">
+                    <span class="story-completion-text">23/27</span>
+                    <span class="story-completion-percent">85%</span>
+                    <div class="mini-progress-bar">
+                        <div class="mini-progress-fill high" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                        <div class="epic-card">
+            <div class="epic-header">
+                <div class="epic-title">RAS: RAS abuse protection behind Umbrella</div>
+                <a href="https://jira.livenation.com/browse/PAS-444" target="_blank" class="epic-key">PAS-444</a>
+            </div>
+            <div class="epic-meta">
+                <span class="status-badge status-in-progress">In Progress</span>
+                <span class="target-dates">Jun 25 – Aug 31, 2026</span>
+                <div class="assignee">
+                    <div class="assignee-avatar">MS</div>
+                    <span>Mo Shareef</span>
+                </div>
+                <div class="story-completion high-completion">
+                    <span class="story-completion-text">17/20</span>
+                    <span class="story-completion-percent">85%</span>
+                    <div class="mini-progress-bar">
+                        <div class="mini-progress-fill high" style="width: 85%"></div>
+                    </div>
+                </div>
+                <span class="assignee" title="Stories cancelled as Will Not Do; excluded from the completion denominator">+10 not doing</span>
+            </div>
+        </div>
+
+                        <div class="epic-card">
+            <div class="epic-header">
+                <div class="epic-title">Co-Branding Tool Updates</div>
+                <a href="https://jira.livenation.com/browse/GDISCO-4436" target="_blank" class="epic-key">GDISCO-4436</a>
+            </div>
+            <div class="epic-meta">
+                <span class="status-badge status-in-progress">In Progress</span>
+                <span class="past-target">Past Target</span>
+                <span class="target-dates">May 21 – May 31, 2026</span>
+                <div class="assignee">
+                    <div class="assignee-avatar">RR</div>
+                    <span>Rosie Rankin</span>
+                </div>
+                <div class="story-completion high-completion">
+                    <span class="story-completion-text">5/6</span>
+                    <span class="story-completion-percent">83%</span>
+                    <div class="mini-progress-bar">
+                        <div class="mini-progress-fill high" style="width: 83%"></div>
+                    </div>
+                </div>
+                <span class="assignee" title="Stories cancelled as Will Not Do; excluded from the completion denominator">+2 not doing</span>
+            </div>
+        </div>
+
+                        <div class="epic-card">
+            <div class="epic-header">
+                <div class="epic-title">Global EDP: General Admission (GA) Section Gaps</div>
+                <a href="https://jira.livenation.com/browse/GEDP-9240" target="_blank" class="epic-key">GEDP-9240</a>
+            </div>
+            <div class="epic-meta">
+                <span class="status-badge status-in-progress">In Progress</span>
+                <span class="target-dates">Jul 6 – Aug 31, 2026</span>
+                <div class="assignee">
+                    <div class="assignee-avatar">AT</div>
+                    <span>Ashley Trone</span>
+                </div>
+                <div class="story-completion high-completion">
+                    <span class="story-completion-text">18/24</span>
+                    <span class="story-completion-percent">75%</span>
+                    <div class="mini-progress-bar">
+                        <div class="mini-progress-fill high" style="width: 75%"></div>
                     </div>
                 </div>
             </div>
@@ -683,186 +813,16 @@
             </div>
             <div class="epic-meta">
                 <span class="status-badge status-in-progress">In Progress</span>
+                <span class="target-dates">Apr 1 – Oct 1, 2026</span>
                 <div class="assignee">
                     <div class="assignee-avatar">HC</div>
                     <span>Hans Chen</span>
                 </div>
                 <div class="story-completion high-completion">
-                    <span class="story-completion-text">5/6</span>
-                    <span class="story-completion-percent">83%</span>
+                    <span class="story-completion-text">3/4</span>
+                    <span class="story-completion-percent">75%</span>
                     <div class="mini-progress-bar">
-                        <div class="mini-progress-fill high" style="width: 83%"></div>
-                    </div>
-                </div>
-                <span class="assignee" title="Stories cancelled as Will Not Do; excluded from the completion denominator">+1 not doing</span>
-            </div>
-        </div>
-
-                        <div class="epic-card">
-            <div class="epic-header">
-                <div class="epic-title">Global EDP: Milestone 6 Backend Support</div>
-                <a href="https://jira.livenation.com/browse/PAS-18" target="_blank" class="epic-key">PAS-18</a>
-            </div>
-            <div class="epic-meta">
-                <span class="status-badge status-in-progress">In Progress</span>
-                <div class="assignee">
-                    <div class="assignee-avatar">MS</div>
-                    <span>Mo Shareef</span>
-                </div>
-                <div class="story-completion high-completion">
-                    <span class="story-completion-text">5/6</span>
-                    <span class="story-completion-percent">83%</span>
-                    <div class="mini-progress-bar">
-                        <div class="mini-progress-fill high" style="width: 83%"></div>
-                    </div>
-                </div>
-                <span class="assignee" title="Stories cancelled as Will Not Do; excluded from the completion denominator">+1 not doing</span>
-            </div>
-        </div>
-
-                        <div class="epic-card">
-            <div class="epic-header">
-                <div class="epic-title">RAS: RAS abuse protection behind Umbrella</div>
-                <a href="https://jira.livenation.com/browse/PAS-444" target="_blank" class="epic-key">PAS-444</a>
-            </div>
-            <div class="epic-meta">
-                <span class="status-badge status-in-progress">In Progress</span>
-                <div class="assignee">
-                    <div class="assignee-avatar">PS</div>
-                    <span>Paul Scarrone</span>
-                </div>
-                <div class="story-completion high-completion">
-                    <span class="story-completion-text">16/20</span>
-                    <span class="story-completion-percent">80%</span>
-                    <div class="mini-progress-bar">
-                        <div class="mini-progress-fill high" style="width: 80%"></div>
-                    </div>
-                </div>
-                <span class="assignee" title="Stories cancelled as Will Not Do; excluded from the completion denominator">+10 not doing</span>
-            </div>
-        </div>
-
-                        <div class="epic-card">
-            <div class="epic-header">
-                <div class="epic-title">Global EDP: Client Co-Branding Using Co-Branding Tool</div>
-                <a href="https://jira.livenation.com/browse/GEDP-5282" target="_blank" class="epic-key">GEDP-5282</a>
-            </div>
-            <div class="epic-meta">
-                <span class="status-badge status-in-progress">In Progress</span>
-                <div class="assignee">
-                    <div class="assignee-avatar">AT</div>
-                    <span>Ashley Trone</span>
-                </div>
-                <div class="story-completion high-completion">
-                    <span class="story-completion-text">15/19</span>
-                    <span class="story-completion-percent">79%</span>
-                    <div class="mini-progress-bar">
-                        <div class="mini-progress-fill high" style="width: 79%"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-                        <div class="epic-card">
-            <div class="epic-header">
-                <div class="epic-title">Backend Ticket Perks - Milestone Beta</div>
-                <a href="https://jira.livenation.com/browse/PAS-7" target="_blank" class="epic-key">PAS-7</a>
-            </div>
-            <div class="epic-meta">
-                <span class="status-badge status-in-progress">In Progress</span>
-                <div class="assignee">
-                    <div class="assignee-avatar">MS</div>
-                    <span>Mo Shareef</span>
-                </div>
-                <div class="story-completion high-completion">
-                    <span class="story-completion-text">21/27</span>
-                    <span class="story-completion-percent">78%</span>
-                    <div class="mini-progress-bar">
-                        <div class="mini-progress-fill high" style="width: 78%"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-                        <div class="epic-card">
-            <div class="epic-header">
-                <div class="epic-title">Ticket Perks - Milestone Beta</div>
-                <a href="https://jira.livenation.com/browse/GEDP-7536" target="_blank" class="epic-key">GEDP-7536</a>
-            </div>
-            <div class="epic-meta">
-                <span class="status-badge status-in-progress">In Progress</span>
-                <div class="assignee">
-                    <div class="assignee-avatar">SB</div>
-                    <span>Shani Brown</span>
-                </div>
-                <div class="story-completion high-completion">
-                    <span class="story-completion-text">22/29</span>
-                    <span class="story-completion-percent">76%</span>
-                    <div class="mini-progress-bar">
-                        <div class="mini-progress-fill high" style="width: 76%"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-                        <div class="epic-card">
-            <div class="epic-header">
-                <div class="epic-title">Global EDP: Ticket Packages Phase 2 - ADA, Forced Packages, Password</div>
-                <a href="https://jira.livenation.com/browse/GEDP-7881" target="_blank" class="epic-key">GEDP-7881</a>
-            </div>
-            <div class="epic-meta">
-                <span class="status-badge status-in-progress">In Progress</span>
-                <div class="assignee">
-                    <div class="assignee-avatar">HC</div>
-                    <span>Hans Chen</span>
-                </div>
-                <div class="story-completion high-completion">
-                    <span class="story-completion-text">19/25</span>
-                    <span class="story-completion-percent">76%</span>
-                    <div class="mini-progress-bar">
-                        <div class="mini-progress-fill high" style="width: 76%"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-                        <div class="epic-card">
-            <div class="epic-header">
-                <div class="epic-title">Global EDP: Upgrades 1.1 - Bring Upgrades to Global EDP (NA Clippers, Current UX) + Partial Upgrades</div>
-                <a href="https://jira.livenation.com/browse/GEDP-8881" target="_blank" class="epic-key">GEDP-8881</a>
-            </div>
-            <div class="epic-meta">
-                <span class="status-badge status-in-progress">In Progress</span>
-                <div class="assignee">
-                    <div class="assignee-avatar">NG</div>
-                    <span>Niklas Grahl</span>
-                </div>
-                <div class="story-completion">
-                    <span class="story-completion-text">16/22</span>
-                    <span class="story-completion-percent">73%</span>
-                    <div class="mini-progress-bar">
-                        <div class="mini-progress-fill" style="width: 73%"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-                        <div class="epic-card">
-            <div class="epic-header">
-                <div class="epic-title">Global EDP: General Admission (GA) Section Gaps</div>
-                <a href="https://jira.livenation.com/browse/GEDP-9240" target="_blank" class="epic-key">GEDP-9240</a>
-            </div>
-            <div class="epic-meta">
-                <span class="status-badge status-in-progress">In Progress</span>
-                <div class="assignee">
-                    <div class="assignee-avatar">AT</div>
-                    <span>Ashley Trone</span>
-                </div>
-                <div class="story-completion">
-                    <span class="story-completion-text">17/24</span>
-                    <span class="story-completion-percent">71%</span>
-                    <div class="mini-progress-bar">
-                        <div class="mini-progress-fill" style="width: 71%"></div>
+                        <div class="mini-progress-fill high" style="width: 75%"></div>
                     </div>
                 </div>
             </div>
@@ -875,15 +835,16 @@
             </div>
             <div class="epic-meta">
                 <span class="status-badge status-in-progress">In Progress</span>
+                <span class="target-dates">Jun 15 – Sep 30, 2026</span>
                 <div class="assignee">
                     <div class="assignee-avatar">SV</div>
                     <span>Sean Vergara</span>
                 </div>
                 <div class="story-completion">
-                    <span class="story-completion-text">81/120</span>
-                    <span class="story-completion-percent">68%</span>
+                    <span class="story-completion-text">101/137</span>
+                    <span class="story-completion-percent">74%</span>
                     <div class="mini-progress-bar">
-                        <div class="mini-progress-fill" style="width: 68%"></div>
+                        <div class="mini-progress-fill" style="width: 74%"></div>
                     </div>
                 </div>
                 <span class="assignee" title="Stories cancelled as Will Not Do; excluded from the completion denominator">+3 not doing</span>
@@ -892,23 +853,45 @@
 
                         <div class="epic-card">
             <div class="epic-header">
-                <div class="epic-title">Co-Branding Tool Updates</div>
-                <a href="https://jira.livenation.com/browse/GDISCO-4436" target="_blank" class="epic-key">GDISCO-4436</a>
+                <div class="epic-title">Global EDP: Upgrades 1.1 - Bring Upgrades to Global EDP (NA Clippers, Current UX) + Partial Upgrades</div>
+                <a href="https://jira.livenation.com/browse/GEDP-8881" target="_blank" class="epic-key">GEDP-8881</a>
             </div>
             <div class="epic-meta">
                 <span class="status-badge status-in-progress">In Progress</span>
+                <span class="target-dates">Jun 1 – Aug 31, 2026</span>
                 <div class="assignee">
-                    <div class="assignee-avatar">SP</div>
-                    <span>Sofia Pohjalainen</span>
+                    <div class="assignee-avatar">SV</div>
+                    <span>Sean Vergara</span>
                 </div>
                 <div class="story-completion">
-                    <span class="story-completion-text">4/6</span>
-                    <span class="story-completion-percent">67%</span>
+                    <span class="story-completion-text">21/33</span>
+                    <span class="story-completion-percent">64%</span>
                     <div class="mini-progress-bar">
-                        <div class="mini-progress-fill" style="width: 67%"></div>
+                        <div class="mini-progress-fill" style="width: 64%"></div>
                     </div>
                 </div>
-                <span class="assignee" title="Stories cancelled as Will Not Do; excluded from the completion denominator">+2 not doing</span>
+            </div>
+        </div>
+
+                        <div class="epic-card">
+            <div class="epic-header">
+                <div class="epic-title">Global EDP: FE Performance &amp; Resiliency</div>
+                <a href="https://jira.livenation.com/browse/GEDP-9109" target="_blank" class="epic-key">GEDP-9109</a>
+            </div>
+            <div class="epic-meta">
+                <span class="status-badge status-in-progress">In Progress</span>
+                <span class="target-dates">Jul 27 – Sep 30, 2026</span>
+                <div class="assignee">
+                    <div class="assignee-avatar">SV</div>
+                    <span>Sean Vergara</span>
+                </div>
+                <div class="story-completion">
+                    <span class="story-completion-text">11/21</span>
+                    <span class="story-completion-percent">52%</span>
+                    <div class="mini-progress-bar">
+                        <div class="mini-progress-fill" style="width: 52%"></div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -919,6 +902,7 @@
             </div>
             <div class="epic-meta">
                 <span class="status-badge status-in-progress">In Progress</span>
+                <span class="target-dates">Oct 1 – Oct 30, 2026</span>
                 <div class="assignee">
                     <div class="assignee-avatar">MS</div>
                     <span>Mo Shareef</span>
@@ -940,15 +924,16 @@
             </div>
             <div class="epic-meta">
                 <span class="status-badge status-in-progress">In Progress</span>
+                <span class="target-dates">Jun 22 – Sep 30, 2026</span>
                 <div class="assignee">
                     <div class="assignee-avatar">RG</div>
                     <span>Rodrigo Gomez</span>
                 </div>
                 <div class="story-completion">
-                    <span class="story-completion-text">6/13</span>
-                    <span class="story-completion-percent">46%</span>
+                    <span class="story-completion-text">7/16</span>
+                    <span class="story-completion-percent">44%</span>
                     <div class="mini-progress-bar">
-                        <div class="mini-progress-fill" style="width: 46%"></div>
+                        <div class="mini-progress-fill" style="width: 44%"></div>
                     </div>
                 </div>
             </div>
@@ -956,20 +941,43 @@
 
                         <div class="epic-card">
             <div class="epic-header">
-                <div class="epic-title">Global EDP: FE Performance &amp; Resiliency</div>
-                <a href="https://jira.livenation.com/browse/GEDP-9109" target="_blank" class="epic-key">GEDP-9109</a>
+                <div class="epic-title">Canada Seller disclosure Part 2</div>
+                <a href="https://jira.livenation.com/browse/GEDP-9244" target="_blank" class="epic-key">GEDP-9244</a>
             </div>
             <div class="epic-meta">
                 <span class="status-badge status-in-progress">In Progress</span>
+                <span class="target-dates">Jul 31 – Sep 1, 2026</span>
                 <div class="assignee">
-                    <div class="assignee-avatar">SV</div>
-                    <span>Sean Vergara</span>
+                    <div class="assignee-avatar">HC</div>
+                    <span>Hans Chen</span>
                 </div>
                 <div class="story-completion">
-                    <span class="story-completion-text">8/24</span>
-                    <span class="story-completion-percent">33%</span>
+                    <span class="story-completion-text">1/4</span>
+                    <span class="story-completion-percent">25%</span>
                     <div class="mini-progress-bar">
-                        <div class="mini-progress-fill" style="width: 33%"></div>
+                        <div class="mini-progress-fill" style="width: 25%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                        <div class="epic-card">
+            <div class="epic-header">
+                <div class="epic-title">RAS: Integrate Codeless Unlockable Offers into RAS for use with EDP INTL (MFX)</div>
+                <a href="https://jira.livenation.com/browse/PAS-541" target="_blank" class="epic-key">PAS-541</a>
+            </div>
+            <div class="epic-meta">
+                <span class="status-badge status-in-progress">In Progress</span>
+                <span class="target-dates">Aug 7 – Aug 31, 2026</span>
+                <div class="assignee">
+                    <div class="assignee-avatar">MS</div>
+                    <span>Mo Shareef</span>
+                </div>
+                <div class="story-completion">
+                    <span class="story-completion-text">2/9</span>
+                    <span class="story-completion-percent">22%</span>
+                    <div class="mini-progress-bar">
+                        <div class="mini-progress-fill" style="width: 22%"></div>
                     </div>
                 </div>
             </div>
@@ -982,6 +990,7 @@
             </div>
             <div class="epic-meta">
                 <span class="status-badge status-in-progress">In Progress</span>
+                <span class="target-dates">Jul 29 – Sep 30, 2026</span>
                 <div class="assignee">
                     <div class="assignee-avatar">MS</div>
                     <span>Mo Shareef</span>
@@ -1003,6 +1012,7 @@
             </div>
             <div class="epic-meta">
                 <span class="status-badge status-in-progress">In Progress</span>
+                <span class="target-dates">Jul 1 – Sep 30, 2026</span>
                 <div class="assignee">
                     <div class="assignee-avatar">MS</div>
                     <span>Mo Shareef</span>
@@ -1020,11 +1030,34 @@
 
                         <div class="epic-card">
             <div class="epic-header">
+                <div class="epic-title">RAS: Upgrades Backend Work including Flat Fee</div>
+                <a href="https://jira.livenation.com/browse/PAS-1" target="_blank" class="epic-key">PAS-1</a>
+            </div>
+            <div class="epic-meta">
+                <span class="status-badge status-in-progress">In Progress</span>
+                <span class="target-dates">Jul 6 – Sep 30, 2026</span>
+                <div class="assignee">
+                    <div class="assignee-avatar">MS</div>
+                    <span>Mo Shareef</span>
+                </div>
+                <div class="story-completion low-completion">
+                    <span class="story-completion-text">0/6</span>
+                    <span class="story-completion-percent">0%</span>
+                    <div class="mini-progress-bar">
+                        <div class="mini-progress-fill low" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                        <div class="epic-card">
+            <div class="epic-header">
                 <div class="epic-title">RAS: Fix Availability Flapping (AVPP/AVSC) - stabilisation &amp; monitoring</div>
                 <a href="https://jira.livenation.com/browse/PAS-759" target="_blank" class="epic-key">PAS-759</a>
             </div>
             <div class="epic-meta">
                 <span class="status-badge status-in-progress">In Progress</span>
+                <span class="target-dates">Jun 1 – Sep 30, 2026</span>
                 <div class="assignee">
                     <div class="assignee-avatar">MS</div>
                     <span>Mo Shareef</span>
@@ -1046,6 +1079,7 @@
             </div>
             <div class="epic-meta">
                 <span class="status-badge status-in-progress">In Progress</span>
+                <span class="target-dates">Jul 1 – Sep 30, 2026</span>
                 <div class="assignee">
                     <div class="assignee-avatar">MS</div>
                     <span>Mo Shareef</span>
@@ -1067,39 +1101,19 @@
             </div>
             <div class="epic-meta">
                 <span class="status-badge status-in-progress">In Progress</span>
+                <span class="target-dates">Jul 13 – Aug 28, 2026</span>
                 <div class="assignee">
                     <div class="assignee-avatar">RG</div>
                     <span>Rodrigo Gomez</span>
                 </div>
                 <div class="story-completion low-completion">
-                    <span class="story-completion-text">0/2</span>
+                    <span class="story-completion-text">0/1</span>
                     <span class="story-completion-percent">0%</span>
                     <div class="mini-progress-bar">
                         <div class="mini-progress-fill low" style="width: 0%"></div>
                     </div>
                 </div>
-                <span class="assignee" title="Stories cancelled as Will Not Do; excluded from the completion denominator">+3 not doing</span>
-            </div>
-        </div>
-
-                        <div class="epic-card">
-            <div class="epic-header">
-                <div class="epic-title">Canada Seller disclosure Part 2</div>
-                <a href="https://jira.livenation.com/browse/GEDP-9244" target="_blank" class="epic-key">GEDP-9244</a>
-            </div>
-            <div class="epic-meta">
-                <span class="status-badge status-in-progress">In Progress</span>
-                <div class="assignee">
-                    <div class="assignee-avatar">HC</div>
-                    <span>Hans Chen</span>
-                </div>
-                <div class="story-completion low-completion">
-                    <span class="story-completion-text">0/4</span>
-                    <span class="story-completion-percent">0%</span>
-                    <div class="mini-progress-bar">
-                        <div class="mini-progress-fill low" style="width: 0%"></div>
-                    </div>
-                </div>
+                <span class="assignee" title="Stories cancelled as Will Not Do; excluded from the completion denominator">+4 not doing</span>
             </div>
         </div>
                     </div>
@@ -1107,9 +1121,30 @@
                 <div class="status-column">
                     <div class="status-column-header done">
                         <div class="status-column-title">Done</div>
-                        <div class="status-column-count">4</div>
+                        <div class="status-column-count">5</div>
                     </div>
                     <div class="status-column-body">
+                        <div class="epic-card">
+            <div class="epic-header">
+                <div class="epic-title">Global EDP: Sports Calendar</div>
+                <a href="https://jira.livenation.com/browse/GEDP-8155" target="_blank" class="epic-key">GEDP-8155</a>
+            </div>
+            <div class="epic-meta">
+                <span class="status-badge status-done">Done</span>
+                <div class="assignee">
+                    <div class="assignee-avatar">AT</div>
+                    <span>Ashley Trone</span>
+                </div>
+                <div class="story-completion high-completion">
+                    <span class="story-completion-text">16/16</span>
+                    <span class="story-completion-percent">100%</span>
+                    <div class="mini-progress-bar">
+                        <div class="mini-progress-fill high" style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
                         <div class="epic-card">
             <div class="epic-header">
                 <div class="epic-title">Global EDP: League Branding</div>
@@ -1118,8 +1153,8 @@
             <div class="epic-meta">
                 <span class="status-badge status-done">Done</span>
                 <div class="assignee">
-                    <div class="assignee-avatar">SP</div>
-                    <span>Sofia Pohjalainen</span>
+                    <div class="assignee-avatar">RR</div>
+                    <span>Rosie Rankin</span>
                 </div>
                 <div class="story-completion high-completion">
                     <span class="story-completion-text">4/4</span>
@@ -1154,23 +1189,6 @@
 
                         <div class="epic-card">
             <div class="epic-header">
-                <div class="epic-title">Horizon - TM Unlock and Presales Program - Backend</div>
-                <a href="https://jira.livenation.com/browse/PAS-556" target="_blank" class="epic-key">PAS-556</a>
-            </div>
-            <div class="epic-meta">
-                <span class="status-badge status-done">Done</span>
-                <div class="assignee">
-                    <div class="assignee-avatar">UN</div>
-                    <span>Unassigned</span>
-                </div>
-                <div class="story-completion">
-                    <span class="story-completion-text">No stories</span>
-                </div>
-            </div>
-        </div>
-
-                        <div class="epic-card">
-            <div class="epic-header">
                 <div class="epic-title">Global EDP: Level Up Experience</div>
                 <a href="https://jira.livenation.com/browse/GEDP-9176" target="_blank" class="epic-key">GEDP-9176</a>
             </div>
@@ -1190,6 +1208,23 @@
                 <span class="assignee" title="Stories cancelled as Will Not Do; excluded from the completion denominator">+1 not doing</span>
             </div>
         </div>
+
+                        <div class="epic-card">
+            <div class="epic-header">
+                <div class="epic-title">Horizon - TM Unlock and Presales Program - Backend</div>
+                <a href="https://jira.livenation.com/browse/PAS-556" target="_blank" class="epic-key">PAS-556</a>
+            </div>
+            <div class="epic-meta">
+                <span class="status-badge status-done">Done</span>
+                <div class="assignee">
+                    <div class="assignee-avatar">UN</div>
+                    <span>Unassigned</span>
+                </div>
+                <div class="story-completion">
+                    <span class="story-completion-text">No stories</span>
+                </div>
+            </div>
+        </div>
                     </div>
                 </div>
 
@@ -1198,8 +1233,8 @@
 
         <footer>
             <p>Dashboard generated by <a href="https://claude.com/claude-code" class="footer-link" target="_blank">Claude Code</a> via <a href="https://jira.livenation.com/browse/TMG-610" class="footer-link" target="_blank">Jira MCP</a></p>
-            <p style="margin-top: 0.5rem;">Last updated: August 17, 2026 | Data source: Jira Live Nation (live epic + story rollups)</p>
-            <p style="margin-top: 0.25rem; font-size: 0.8125rem; color: var(--text-muted);">30 epics tracked: 4 done, 22 in dev, 4 backlog/refinement. Completion excludes stories closed as Will Not Do.</p>
+            <p style="margin-top: 0.5rem;">Last updated: August 26, 2026 | Data source: Jira Live Nation (live epic + story rollups)</p>
+            <p style="margin-top: 0.25rem; font-size: 0.8125rem; color: var(--text-muted);">30 epics tracked: 5 done, 23 in dev, 2 backlog/refinement. Completion excludes stories closed as Will Not Do.</p>
         </footer>
     </div>
 </body>
